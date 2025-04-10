@@ -1,0 +1,20 @@
+{
+    "name": "student-line-app",
+    "version": "1.0.0",
+    "description": "學生LINE App網頁資料查詢服務",
+    "main": "api/server.js",
+    "scripts": {
+        "start": "node api/server.js",
+        "dev": "nodemon api/server.js"
+    },
+    "dependencies": {
+        "axios": "^1.6.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "googleapis": "^126.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+}

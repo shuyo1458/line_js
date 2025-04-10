@@ -1,0 +1,79 @@
+<div class="container mt-3">
+    <div class="row" id="featuresNav">
+        <!-- 功能卡片將由 JavaScript 動態生成 -->
+    </div>
+</div>
+
+<script>
+    // 獲取功能設置並生成導航
+    fetch('/api/features')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const featuresNav = document.getElementById('featuresNav');
+            const features = data.features;
+            const currentClass = new URLSearchParams(window.location.search).get('class') || '0810';
+            
+            // 清空容器
+            featuresNav.innerHTML = '';
+            
+            // 學生資料查詢卡片
+            if (features.studentInfo && features.studentInfo.enabled) {
+                featuresNav.innerHTML += `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">學生資料查詢</h5>
+                                <p class="card-text">查詢學生基本資料</p>
+                                <a href="search.html?class=${currentClass}" class="btn btn-primary">查詢</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // LINE ID綁定卡片
+            if (features.lineBinding && features.lineBinding.enabled) {
+                featuresNav.innerHTML += `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">LINE ID綁定</h5>
+                                <p class="card-text">綁定LINE ID與學號</p>
+                                <a href="bind.html?class=${currentClass}" class="btn btn-primary">綁定</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // 成績查詢卡片
+            if (features.grades && features.grades.enabled) {
+                featuresNav.innerHTML += `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">成績查詢</h5>
+                                <p class="card-text">查詢個人成績資料</p>
+                                <a href="grades.html?class=${currentClass}" class="btn btn-primary">查詢</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching features:', error);
+            document.getElementById('featuresNav').innerHTML = `
+                <div class="col-12 text-center">
+                    <div class="alert alert-danger">
+                        無法獲取功能設置，請稍後再試
+                    </div>
+                </div>
+            `;
+        });
+</script> 

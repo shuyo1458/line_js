@@ -1,0 +1,48 @@
+{
+    "features": {
+        "lineBinding": {
+            "enabled": true,
+            "description": "LINE ID綁定功能"
+        },
+        "studentInfo": {
+            "enabled": false,
+            "description": "學生資料查詢功能",
+            "class": {
+                "0810": "YOUR_0810_STUDENT_INFO_FILE_ID",
+                "1012": "YOUR_1012_STUDENT_INFO_FILE_ID"
+            }
+        },
+        "grades": {
+            "enabled": false,
+            "description": "成績查詢功能",
+            "class": {
+                "0810": "YOUR_0810_GRADES_FILE_ID",
+                "1012": "YOUR_1012_GRADES_FILE_ID"
+            }
+        },
+        "bindings": {
+            "enabled": true,
+            "file": "1nUdF6PjMPWRvi2vAF67btTm-m3_Y_kaQ"
+        }
+    },
+    "googleDrive": {
+        "credentials": {
+            "type": "service_account",
+            "project_id": "astral-reef-446915-u1",
+            "private_key_id": "073798d81c34163ed00efc9a499907260fc06e80",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDd5jGAwy57xi3R\nmCfuGfqtx73eCsDmD+iJkRAsug+tqyeocNtAGLf76///SJxxfjW5u4mAYABjTgnL\nVeKM1eED1AmCWIf4Mg4wKuyoMI5K5zS1MqE53cxkMRwr8iAHGvSa6GMsQyxNkdrW\n51eNcdIbzw/wkgKLpXc6Esw+fJlFMJOh6opT+DbbHNs6c14uehWESEkXNFKTJ5Kh\n7nfwRd8iu6cz1wTkFthEsE00twM2bIvnlXLlntRi3mcqyiA+g98Q9tptcAPlDGtX\nJ2q5A7lii70W/63WgiibJF1Yt1O0LBxpFhqdUaM+Zx08q0i067Ign6d897jWUzpn\nwUXY6l6vAgMBAAECggEAX9ofWR02152YTjj5SqdrOyUUlbU0dUy66K3CfGeU/TJ5\nS5AQjYP/+bEMoKQne/kGUSg68brGgB8GKRD871Q2QlaWEvmWJnbM3S61ksOCu8Va\n5cisj1gJgeAa6LrK7fbNYZrvt/9+RDW0f+9nyQA5P+z2WDdiJRuBQJM9KeLdvF48\ntDQH7emLnboczzipRj20F+NeYfLTdN2OBbGJPWNv3Ya7NK3NfhisbQMLfZLgtZmB\n3RAw20YU/gy9HJoB1VA6/yHZnA6qcj7lsMAkxa3xn+s/InooURkLHamkwQEiDfrR\ne/fRVo+2n/VHnaMLUsPdVDDs+ue/kFo6056593mxrQKBgQD8BBsVbiqiHibYAXRR\njuxkQFA8iKJegvYB8PQmWFIAWl6j4pQiwosqmorOsOb1hki8vYowDxh68GPtXO4T\nvzDHHjwz/ClAU2wsy5Xp4AgQZ9UQZw5+RnJw6KwtTm28Q2ERSNOPuPVkqJdks5+C\n9oA9ASSbaspIpyZZEZyTC2AWRQKBgQDhaDTafZtAov4CvYeAkCv1USiKBjgpqc9O\nWbDQaXGBZ/AhO25+5Sj/XZXDBLBVOy1SnHfEf/wbsSg+ItEI/9d6k2edtmAQ4cZM\nI812SX4sa02p0+O5B9X8Wn9vsRt+rhwTxLhunIg36h1d9l+KrWURXsdWBn8cBWYj\nZEgNBs/aYwKBgFyV8ZFM+PK4WxLubdpsxKIMEq46kFRijpil+jyAJBgnGy/gVQX0\nLQaI4kgPK7q2C9DzXWpMkXTRDhUtF/Y/Pl9Y10tN76XHQC2w2bGjcbL9QoSVJ/jy\nTqb2hBLdBmms42NjOv5JODYzzfLcHtURVImU+uryL8DDT85XLwvCmRl1AoGBANvK\nYL8r+1brmAPUC2yxKCvtFzp/FgSKMDqV+nM+Xg9w6hV9fiD+ExvuhTnEOKzjJy6G\no8JXidz2webUzD+aOOKtGTwPuVy8yj80KgRNZVqqxu/yTPr/SQjotZqTd9vuqjIc\ngDpbJ/hdsIUO19rBeOuXH4gijY8lNJMOFbOeEM9BAoGAabmaFig/1mgLPoBbX0zV\nQPAXBBEM4lfFH/LPkwYRThZf/Y16eSDyfACViwXfpNjAhRN98bQIMMlXMyNS72ov\n00Zgqz0zCKmfL1Ee4VFLa1OWbH4x7gbJkbq8SSHxCX0SkzLkfkjf54+PqcfpTVBO\nTDCdYgRnWbMe5oVIp0EJPL4=\n-----END PRIVATE KEY-----\n",
+            "client_email": "id-shu@astral-reef-446915-u1.iam.gserviceaccount.com",
+            "client_id": "107359414070634157596",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/id-shu%40astral-reef-446915-u1.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+        },
+        "files": {
+            "0810": "YOUR_0810_STUDENT_INFO_FILE_ID",
+            "1012": "YOUR_1012_STUDENT_INFO_FILE_ID",
+            "bindings": "1nUdF6PjMPWRvi2vAF67btTm-m3_Y_kaQ"
+        }
+    }
+} 
